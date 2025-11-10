@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6345897865f93386037cafc9de6e782c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6345897865f93386037cafc9de6e782c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6345897865f93386037cafc9de6e782c = L.map(
+                "map_6345897865f93386037cafc9de6e782c",
+                {
+                    center: [32.5805, -99.675],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_49bb6707727de10b30ae558a326ded0a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_49bb6707727de10b30ae558a326ded0a.addTo(map_6345897865f93386037cafc9de6e782c);
+        
+    
+            var feature_group_ed658e796e5a8656d4aec0f93fb0a920 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_fca0bfcb1ec2b5ea115678068abb8b59 = L.marker(
+                [32.5805, -99.675],
+                {
+}
+            ).addTo(feature_group_ed658e796e5a8656d4aec0f93fb0a920);
+        
+    
+            var icon_875008fd684d0dfa3961bc48efeb623e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99d5ca603b91e6a86922e4942bf4163c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_404bb89df3a5c925f2696dc86ce13516 = $(`<div id="html_404bb89df3a5c925f2696dc86ce13516" style="width: 100.0%; height: 100.0%;">Center of Texas</div>`)[0];
+                popup_99d5ca603b91e6a86922e4942bf4163c.setContent(html_404bb89df3a5c925f2696dc86ce13516);
+            
+        
+
+        marker_fca0bfcb1ec2b5ea115678068abb8b59.bindPopup(popup_99d5ca603b91e6a86922e4942bf4163c)
+        ;
+
+        
+    
+    
+                marker_fca0bfcb1ec2b5ea115678068abb8b59.setIcon(icon_875008fd684d0dfa3961bc48efeb623e);
+            
+    
+            feature_group_ed658e796e5a8656d4aec0f93fb0a920.addTo(map_6345897865f93386037cafc9de6e782c);
+        
+</script>
+</html>
