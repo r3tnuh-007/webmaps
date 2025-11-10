@@ -1,4 +1,4 @@
-from folium import *
+from folium import Map, FeatureGroup, CircleMarker, GeoJson, LayerControl, Icon
 
 map = Map(location=[32.5805, -99.6750], zoom_start=7, tiles="OpenStreetMap")
 
